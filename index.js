@@ -26,3 +26,13 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('menu-icon');
     navbar.classList.toggle('active');
 }
+
+// Animate skills progress bars on page load
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.progress').forEach(function(bar) {
+    var percent = bar.getAttribute('data-percentage');
+    setTimeout(function() {
+      bar.style.width = percent + '%';
+    }, 300);
+  });
+});

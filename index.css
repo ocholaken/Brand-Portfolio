@@ -660,6 +660,110 @@ span {
         color: white;
     }
 
+    /* Skills Section Styles */
+.skills {
+  background: #131313;
+  padding: 60px 0;
+}
+.skills .heading {
+  color: #00ffe0;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.skill span {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+.progress-bar {
+  width: 100%;
+  background: #222;
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+}
+.progress {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #00ffe0 0%, #00bfff 100%);
+  border-radius: 2rem;
+  transition: width 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* CV Section Styles */
+.cv {
+  background: #000808;
+  text-align: center;
+  padding: 60px 0;
+}
+.cv .heading {
+  color: #00ffe0;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.cv .btn {
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  margin-top: 1rem;
+}
+
+/* Projects Section Styles */
+.projects {
+  background: #131313;
+  padding: 60px 0;
+}
+.projects .heading {
+  color: #00ffe0;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.projects-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.project {
+  background: #000808;
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+  color: #fff;
+  min-width: 250px;
+  max-width: 320px;
+  box-shadow: 0 0 20px #00ffe033;
+  transition: transform 0.2s;
+}
+.project:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 40px #00ffe0;
+}
+.project h3 {
+  color: #00ffe0;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .skills-container, .projects-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .project {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+}
+
     @media (max-width:1285px) {
         html {
             font-size: 55%;
@@ -777,4 +881,14 @@ span {
         .services-container {
             grid-template-columns: repeat(1, 1fr);
         }
+    }
+
+    @media (max-width: 600px) {
+      .timeline-items::before {
+        display: none !important;
+      }
+      .timeline-dot {
+        display: none !important;
+      }
+      /* Hide any other blue lines or borders if needed */
     }
