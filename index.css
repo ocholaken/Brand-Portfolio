@@ -698,69 +698,10 @@ span {
   transition: width 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* CV Section Styles */
-.cv {
-  background: #000808;
-  text-align: center;
-  padding: 60px 0;
-}
-.cv .heading {
-  color: #00ffe0;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-}
-.cv .btn {
-  font-size: 2rem;
-  padding: 1.2rem 3rem;
-  margin-top: 1rem;
-}
-
-/* Projects Section Styles */
-.projects {
-  background: #131313;
-  padding: 60px 0;
-}
-.projects .heading {
-  color: #00ffe0;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-}
-.projects-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-.project {
-  background: #000808;
-  border-radius: 2rem;
-  padding: 2rem 3rem;
-  color: #fff;
-  min-width: 250px;
-  max-width: 320px;
-  box-shadow: 0 0 20px #00ffe033;
-  transition: transform 0.2s;
-}
-.project:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 0 40px #00ffe0;
-}
-.project h3 {
-  color: #00ffe0;
-  margin-bottom: 1rem;
-}
-
 @media (max-width: 600px) {
-  .skills-container, .projects-container {
+  .skills-container {
     flex-direction: column;
     align-items: stretch;
-  }
-  .project {
-    min-width: unset;
-    max-width: unset;
-    width: 100%;
   }
 }
 
